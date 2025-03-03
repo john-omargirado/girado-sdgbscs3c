@@ -69,11 +69,11 @@ const SDGModal: React.FC<SDGModalProps> = ({ pledge, isOpen, onClose }) => {
       <div
         ref={modalRef}
         className={cn(
-          "bg-white rounded-2xl shadow-xl w-full max-w-3xl max-h-[90vh] overflow-hidden transition-transform duration-300",
+          "bg-white rounded-2xl shadow-xl w-full max-w-3xl max-h-[90vh] flex flex-col overflow-hidden transition-transform duration-300",
           isOpen ? "scale-100" : "scale-95"
         )}
       >
-        <div className="relative">
+        <div className="relative flex-shrink-0">
           <div 
             className="h-24 w-full"
             style={{ backgroundColor: iconColors[pledge.color as keyof typeof iconColors] }}
@@ -86,63 +86,63 @@ const SDGModal: React.FC<SDGModalProps> = ({ pledge, isOpen, onClose }) => {
           >
             <X size={16} color="white" />
           </button>
+        </div>
 
-          <div className="px-8 pb-8 -mt-12">
-            <div 
-              className="w-24 h-24 rounded-xl flex items-center justify-center mb-4 shadow-sm"
-              style={{ backgroundColor: iconColors[pledge.color as keyof typeof iconColors] }}
-            >
-              <span className="text-3xl font-display font-bold text-white">{pledge.id}</span>
+        <div className="overflow-y-auto flex-grow px-8 pb-8 -mt-12">
+          <div 
+            className="w-24 h-24 rounded-xl flex items-center justify-center mb-4 shadow-sm"
+            style={{ backgroundColor: iconColors[pledge.color as keyof typeof iconColors] }}
+          >
+            <span className="text-3xl font-display font-bold text-white">{pledge.id}</span>
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-display font-semibold mb-2">{pledge.title}</h2>
+          
+          <p className="text-muted-foreground mb-8">
+            {pledge.longDescription}
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <Target size={18} />
+                <h3 className="font-medium">Goals</h3>
+              </div>
+              <ul className="space-y-2">
+                {pledge.goals.map((goal, index) => (
+                  <li key={index} className="flex items-start gap-2 text-sm">
+                    <ChevronRight size={16} className="mt-0.5 flex-shrink-0" />
+                    <span>{goal}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl font-display font-semibold mb-2">{pledge.title}</h2>
-            
-            <p className="text-muted-foreground mb-8">
-              {pledge.longDescription}
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-gray-50 rounded-xl p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <Target size={18} />
-                  <h3 className="font-medium">Goals</h3>
-                </div>
-                <ul className="space-y-2">
-                  {pledge.goals.map((goal, index) => (
-                    <li key={index} className="flex items-start gap-2 text-sm">
-                      <ChevronRight size={16} className="mt-0.5 flex-shrink-0" />
-                      <span>{goal}</span>
-                    </li>
-                  ))}
-                </ul>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <LineChart size={18} />
+                <h3 className="font-medium">Expected Impact</h3>
               </div>
-
-              <div className="bg-gray-50 rounded-xl p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <LineChart size={18} />
-                  <h3 className="font-medium">Expected Impact</h3>
-                </div>
-                <p className="text-sm">{pledge.impact}</p>
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <Clock size={18} />
-                  <h3 className="font-medium">Timeline</h3>
-                </div>
-                <p className="text-sm">{pledge.timeline}</p>
-              </div>
+              <p className="text-sm">{pledge.impact}</p>
             </div>
 
-            <div className="flex justify-end">
-              <button
-                onClick={onClose}
-                className="px-6 py-2 bg-gray-100 hover:bg-gray-200 rounded-full text-sm font-medium transition-colors"
-              >
-                Close
-              </button>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <Clock size={18} />
+                <h3 className="font-medium">Timeline</h3>
+              </div>
+              <p className="text-sm">{pledge.timeline}</p>
             </div>
           </div>
+        </div>
+
+        <div className="flex justify-end p-4 bg-white border-t">
+          <button
+            onClick={onClose}
+            className="px-6 py-2 bg-gray-100 hover:bg-gray-200 rounded-full text-sm font-medium transition-colors"
+          >
+            Close
+          </button>
         </div>
       </div>
     </div>
