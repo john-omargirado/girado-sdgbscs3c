@@ -64,18 +64,6 @@ const Header: React.FC = () => {
           >
             Pledges
           </button>
-          <button 
-            onClick={() => scrollToSection('impact')}
-            className="text-sm font-medium hover:text-primary/80 transition-colors"
-          >
-            Impact
-          </button>
-          <button 
-            className="px-4 py-2 bg-primary text-primary-foreground rounded-full text-sm font-medium transition-all hover:bg-primary/90"
-            onClick={() => scrollToSection('contact')}
-          >
-            Contact
-          </button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -107,18 +95,6 @@ const Header: React.FC = () => {
             className="text-xl font-medium py-2 border-b border-gray-100"
           >
             Pledges
-          </button>
-          <button 
-            onClick={() => scrollToSection('impact')}
-            className="text-xl font-medium py-2 border-b border-gray-100"
-          >
-            Impact
-          </button>
-          <button 
-            onClick={() => scrollToSection('contact')}
-            className="mt-4 px-6 py-3 bg-primary text-primary-foreground rounded-full text-lg font-medium transition-all hover:bg-primary/90 w-full"
-          >
-            Contact
           </button>
         </nav>
       </div>
