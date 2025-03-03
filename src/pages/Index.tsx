@@ -5,7 +5,7 @@ import PledgeCard from '@/components/PledgeCard';
 import SDGModal from '@/components/SDGModal';
 import Footer from '@/components/Footer';
 import { pledges } from '@/data/pledges';
-import { ArrowDown, BarChart4, Target, Sparkles } from 'lucide-react';
+import { ArrowDown, Target, Sparkles } from 'lucide-react';
 
 const Index = () => {
   const [selectedPledge, setSelectedPledge] = useState<number | null>(null);
@@ -108,7 +108,7 @@ const Index = () => {
               
               <div className="bg-white p-6 rounded-xl shadow-sm">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <BarChart4 size={24} className="text-primary" />
+                  <Target size={24} className="text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Measurable Progress</h3>
                 <p className="text-muted-foreground">
@@ -141,85 +141,6 @@ const Index = () => {
                 onClick={() => openModal(pledge.id)}
               />
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Impact Section */}
-      <section id="impact" className="py-24 bg-gray-50">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-8 text-center">
-              Tracking My Impact
-            </h2>
-            
-            <div className="bg-white rounded-2xl shadow-sm p-8 mb-12">
-              <h3 className="text-2xl font-semibold mb-6">2023 Progress Highlights</h3>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">47%</div>
-                  <p className="text-sm text-muted-foreground">Reduction in personal carbon footprint</p>
-                </div>
-                
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">120</div>
-                  <p className="text-sm text-muted-foreground">Volunteer hours contributed</p>
-                </div>
-                
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">$3,200</div>
-                  <p className="text-sm text-muted-foreground">Donated to sustainable initiatives</p>
-                </div>
-                
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">14</div>
-                  <p className="text-sm text-muted-foreground">Community events organized</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-2xl shadow-sm p-8">
-              <h3 className="text-2xl font-semibold mb-6">Future Goals</h3>
-              
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-primary text-sm font-medium">1</span>
-                  </div>
-                  <div>
-                    <h4 className="font-medium">Expand community engagement</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Double volunteer hours and organize monthly SDG awareness workshops in local schools.
-                    </p>
-                  </div>
-                </li>
-                
-                <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-primary text-sm font-medium">2</span>
-                  </div>
-                  <div>
-                    <h4 className="font-medium">Transition to net-zero energy consumption</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Complete home energy retrofit and install solar panels to achieve carbon neutrality.
-                    </p>
-                  </div>
-                </li>
-                
-                <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-primary text-sm font-medium">3</span>
-                  </div>
-                  <div>
-                    <h4 className="font-medium">Create SDG innovation fund</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Establish a personal fund to support local entrepreneurs working on SDG-aligned solutions.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
