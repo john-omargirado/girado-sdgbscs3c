@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Pledge } from '@/data/pledges';
 import { cn } from '@/lib/utils';
 import { 
@@ -15,6 +15,9 @@ interface PledgeCardProps {
 }
 
 const PledgeCard: React.FC<PledgeCardProps> = ({ pledge, index, onClick }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isPulsing, setIsPulsing] = useState(false);
+
   const iconMap = {
     'activity': Activity,
     'wheat': Wheat,
@@ -77,6 +80,17 @@ const PledgeCard: React.FC<PledgeCardProps> = ({ pledge, index, onClick }) => {
     'sdg-17': '#19486A'
   };
 
+  const handleClick = () => {
+    // Trigger the pulse animation
+    setIsPulsing(true);
+    
+    // After animation completes, reset state and call the original onClick
+    setTimeout(() => {
+      setIsPulsing(false);
+      onClick();
+    }, 300);
+  };
+
   return (
     <div 
       className={cn(
@@ -85,17 +99,26 @@ const PledgeCard: React.FC<PledgeCardProps> = ({ pledge, index, onClick }) => {
         colorClasses[pledge.color as keyof typeof colorClasses],
         "animate-fade-in",
         { "animation-delay-[200ms]": index % 3 === 1 },
-        { "animation-delay-[400ms]": index % 3 === 2 }
+        { "animation-delay-[400ms]": index % 3 === 2 },
+        { "scale-105": isHovered },
+        { "animate-[pulse_0.3s_ease-in-out]": isPulsing }
       )}
       style={{ 
         animationDelay: `${index * 100}ms`,
-        animationFillMode: 'both'
+        animationFillMode: 'both',
+        transform: isHovered ? 'translateY(-5px)' : 'translateY(0)',
+        boxShadow: isHovered ? `0 10px 25px -5px ${iconColors[pledge.color as keyof typeof iconColors]}30` : 'none'
       }}
-      onClick={onClick}
+      onClick={handleClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="flex justify-between items-start mb-4">
         <div 
-          className="w-12 h-12 rounded-full flex items-center justify-center"
+          className={cn(
+            "w-12 h-12 rounded-full flex items-center justify-center transition-transform duration-300",
+            { "rotate-[360deg]": isHovered }
+          )}
           style={{ backgroundColor: `${iconColors[pledge.color as keyof typeof iconColors]}20` }}
         >
           {IconComponent && (
@@ -106,7 +129,10 @@ const PledgeCard: React.FC<PledgeCardProps> = ({ pledge, index, onClick }) => {
           )}
         </div>
         <span 
-          className="text-sm font-medium rounded-full px-3 py-1"
+          className={cn(
+            "text-sm font-medium rounded-full px-3 py-1 transition-all duration-300",
+            { "transform scale-110": isHovered }
+          )}
           style={{ 
             backgroundColor: `${iconColors[pledge.color as keyof typeof iconColors]}15`,
             color: iconColors[pledge.color as keyof typeof iconColors]
@@ -124,13 +150,19 @@ const PledgeCard: React.FC<PledgeCardProps> = ({ pledge, index, onClick }) => {
       
       <div className="flex justify-between items-center">
         <span 
-          className="text-xs font-medium"
+          className={cn(
+            "text-xs font-medium transition-all duration-300",
+            { "tracking-wider": isHovered }
+          )}
           style={{ color: iconColors[pledge.color as keyof typeof iconColors] }}
         >
           View details
         </span>
         <span 
-          className="w-6 h-6 rounded-full flex items-center justify-center"
+          className={cn(
+            "w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300",
+            { "transform translate-x-1": isHovered }
+          )}
           style={{ 
             backgroundColor: `${iconColors[pledge.color as keyof typeof iconColors]}15`,
           }}

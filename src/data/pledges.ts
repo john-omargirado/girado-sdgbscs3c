@@ -16,256 +16,256 @@ export const pledges: Pledge[] = [
   {
     id: 1,
     title: "No Poverty",
-    shortDescription: "My pledge to contribute to ending poverty in all its forms everywhere",
-    longDescription: "I commit to donating 5% of my income to effective charities that combat extreme poverty. I will also volunteer monthly with local organizations that provide direct support to homeless individuals in my community.",
+    shortDescription: "Taking action to address poverty within Bicol University and local communities",
+    longDescription: "As a BU student, I pledge to volunteer monthly with the university's outreach programs for impoverished communities in Albay. I'll initiate a book and uniform drive each semester for students who cannot afford these essentials, and participate in the university's 'Scholars Help Scholars' mentoring initiative.",
     icon: "activity",
     color: "sdg-1",
     goals: [
-      "Monthly donations to GiveDirectly",
-      "Weekly volunteer work at local shelter",
-      "Advocate for policy change through letters to representatives"
+      "Volunteer 5 hours monthly with BU outreach programs",
+      "Organize semestral book and uniform collection drive",
+      "Mentor 2 financially challenged students per semester"
     ],
-    impact: "Supporting approximately 10 families per year through direct cash transfers, and providing 200+ volunteer hours",
-    timeline: "Ongoing, with quarterly assessment of impact"
+    impact: "Supporting 15+ students annually with academic resources and expanding mentorship network at BU",
+    timeline: "Ongoing throughout academic year with semestral assessment"
   },
   {
     id: 2,
     title: "Zero Hunger",
-    shortDescription: "My commitment to help end hunger and promote sustainable agriculture",
-    longDescription: "I pledge to reduce food waste in my household by 75%, support local farmers through regular farmers market shopping, and participate in community garden initiatives to grow fresh produce for food banks.",
+    shortDescription: "Contributing to food security at BU and surrounding communities",
+    longDescription: "I commit to reducing food waste in the BU canteen by proposing and implementing a food sharing system. I'll participate in the agriculture college's urban gardening initiatives and help organize the distribution of excess produce to community kitchens around the campus.",
     icon: "wheat",
     color: "sdg-2",
     goals: [
-      "Reduce personal food waste by 75%",
-      "Purchase 60% of groceries from local farmers",
-      "Donate 50+ hours to community garden projects" 
+      "Establish a food sharing table in BU canteen",
+      "Dedicate 3 hours weekly to campus urban garden project",
+      "Organize monthly distribution of garden produce to local communities"
     ],
-    impact: "Reduction of approximately 300kg of food waste annually, and contributing to local food systems",
-    timeline: "12-month implementation with monthly tracking"
+    impact: "Reducing campus food waste by approximately 20% and providing fresh produce to nearby communities",
+    timeline: "Implementation within first semester with continued maintenance"
   },
   {
     id: 3,
     title: "Good Health & Well-being",
-    shortDescription: "My pledge to ensure healthy lives and promote well-being for all",
-    longDescription: "I commit to promoting mental health awareness through organizing quarterly workshops in my community, supporting healthcare initiatives for underserved populations, and maintaining a healthy lifestyle that can inspire others.",
+    shortDescription: "Promoting physical and mental health awareness at Bicol University",
+    longDescription: "I pledge to actively participate in BU's mental health awareness campaigns, organize bi-monthly jogging sessions for students, and volunteer with the university health services during vaccination drives and health screenings.",
     icon: "heart-pulse",
     color: "sdg-3",
     goals: [
-      "Organize 4 mental health workshops per year",
-      "Regular blood donation every 3 months",
-      "Promote vaccination and health education",
+      "Lead 2 mental health awareness sessions per semester",
+      "Organize bi-monthly 'Jog for Health' campus events",
+      "Volunteer 15 hours per semester with BU health services"
     ],
-    impact: "Reaching 200+ people through workshops and contributing to community health initiatives",
-    timeline: "Ongoing with annual expansion of reach"
+    impact: "Engaging 100+ students in health activities and supporting university-wide health initiatives",
+    timeline: "Regular schedule throughout academic year"
   },
   {
     id: 4,
     title: "Quality Education",
-    shortDescription: "My commitment to ensure inclusive and equitable quality education",
-    longDescription: "I pledge to tutor underprivileged students in mathematics and science for 5 hours weekly, donate educational materials to schools in need, and advocate for expanded educational opportunities in my community.",
+    shortDescription: "Enhancing educational opportunities within Bicol University community",
+    longDescription: "As a computer science student, I commit to tutoring fellow students struggling with programming courses for 3 hours weekly. I'll create and share educational resources online, and contribute to the CITE department's coding workshops for high school students in Legazpi City.",
     icon: "book-open",
     color: "sdg-4",
     goals: [
-      "Provide 250+ hours of free tutoring annually",
-      "Donate educational resources worth $500",
-      "Mentor 3 at-risk students each semester"
+      "Provide 3 hours of programming tutoring weekly",
+      "Create 5 educational coding tutorials per semester for BU students",
+      "Assist in 3 CITE outreach coding workshops annually"
     ],
-    impact: "Directly supporting 15+ students annually with measurable improvement in academic performance",
-    timeline: "School-year cycle with summer intensive programs"
+    impact: "Supporting academic success for 25+ BU students and introducing coding to 60+ high school students yearly",
+    timeline: "Weekly tutoring schedule with semester-based workshop planning"
   },
   {
     id: 5,
     title: "Gender Equality",
-    shortDescription: "My pledge to achieve gender equality and empower all women and girls",
-    longDescription: "I commit to actively promoting gender equality in my workplace by advocating for equal pay and opportunities, supporting women-owned businesses with at least 30% of my purchases, and volunteering with organizations that empower young women.",
+    shortDescription: "Advocating for gender equality in Bicol University's academic and social environment",
+    longDescription: "I pledge to actively support BU's Women in Computing organization, participate in gender awareness campaigns on campus, and organize discussions about gender equality in technology and other fields where representation gaps exist.",
     icon: "users",
     color: "sdg-5",
     goals: [
-      "Advocate for gender-balanced hiring practices",
-      "Support 10+ women-owned businesses regularly",
-      "Mentor 5 young women in STEM fields"
+      "Active membership in BU Women in Computing group",
+      "Participate in 3 gender equality campus events annually",
+      "Organize one semestral discussion on gender equality in tech"
     ],
-    impact: "Contributing to systemic change in workplace policies and supporting women's economic empowerment",
-    timeline: "Ongoing with quarterly assessment"
+    impact: "Raising awareness and creating supportive spaces for gender diversity within the BU community",
+    timeline: "Ongoing participation with semestral themed discussions"
   },
   {
     id: 6,
     title: "Clean Water & Sanitation",
-    shortDescription: "My commitment to ensure availability and sustainable management of water",
-    longDescription: "I pledge to reduce my household water consumption by 30%, participate in local water conservation initiatives, and support organizations providing clean water access in developing countries through monthly donations.",
+    shortDescription: "Contributing to water conservation efforts at Bicol University",
+    longDescription: "I commit to joining BU's environmental club in their water conservation initiatives, reporting water leaks around campus promptly, and participating in clean-up drives at local water sources like the Yawa River that affect our community's water supply.",
     icon: "droplets",
     color: "sdg-6",
     goals: [
-      "Reduce personal water usage by 30%",
-      "Participate in 3 watershed cleanup events annually",
-      "Fund 2 water projects in developing communities"
+      "Monitor and report campus water infrastructure issues weekly",
+      "Participate in 4 local watershed clean-up activities annually",
+      "Reduce personal water consumption by 20% through mindful usage"
     ],
-    impact: "Saving approximately 15,000 gallons of water annually and supporting global water access",
-    timeline: "24-month transformation with biannual reviews"
+    impact: "Contributing to campus water conservation and local watershed protection efforts",
+    timeline: "Weekly monitoring with quarterly clean-up activities"
   },
   {
     id: 7,
     title: "Affordable & Clean Energy",
-    shortDescription: "My pledge to ensure access to affordable, reliable, sustainable energy",
-    longDescription: "I commit to transitioning my home to 100% renewable energy sources, reducing my energy consumption by 40% through efficiency measures, and advocating for community solar projects in my neighborhood.",
+    shortDescription: "Promoting energy conservation within Bicol University campus",
+    longDescription: "I pledge to start an 'Energy Monitors' student initiative to ensure lights and computers are turned off in BU computer labs when not in use. I'll also advocate for more energy-efficient practices in my department and participate in the university's sustainability committee discussions.",
     icon: "zap",
     color: "sdg-7",
     goals: [
-      "Switch to 100% renewable electricity",
-      "Install energy-efficient appliances throughout home",
-      "Reduce energy consumption by 40% through behavior changes"
+      "Establish Energy Monitors program in CITE department",
+      "Reduce computer lab energy consumption by 15%",
+      "Propose 3 energy efficiency improvements to the department"
     ],
-    impact: "Reducing carbon footprint by approximately 5 tons of CO2 annually",
-    timeline: "18-month transition period"
+    impact: "Decreasing departmental energy usage and promoting energy consciousness among students",
+    timeline: "Program establishment within first month of semester"
   },
   {
     id: 8,
     title: "Decent Work & Economic Growth",
-    shortDescription: "My commitment to promote sustainable economic growth and decent work",
-    longDescription: "I pledge to support fair trade products with at least 50% of my purchases, mentor young entrepreneurs from disadvantaged backgrounds, and advocate for living wages and ethical business practices in my professional network.",
+    shortDescription: "Supporting entrepreneurship and skill development at BU",
+    longDescription: "I commit to participating in BU's student entrepreneurship programs, helping organize the annual career fair, and creating a skill-sharing network among students to prepare us better for professional opportunities after graduation.",
     icon: "briefcase",
     color: "sdg-8",
     goals: [
-      "Increase fair trade purchases to 50% of total",
-      "Mentor 3 entrepreneurs from marginalized communities",
-      "Advocate for living wage policies in business associations"
+      "Active participation in BU's entrepreneurship seminars",
+      "Volunteer 10 hours for the annual BU career fair",
+      "Establish a CITE department skill-sharing program"
     ],
-    impact: "Supporting ethical supply chains and creating economic opportunities for underrepresented groups",
-    timeline: "Ongoing with annual expansion goals"
+    impact: "Enhancing professional preparedness for 50+ students and strengthening BU's career development initiatives",
+    timeline: "Year-round activities with focus on pre-graduation periods"
   },
   {
     id: 9,
     title: "Industry, Innovation & Infrastructure",
-    shortDescription: "My pledge to build resilient infrastructure and foster innovation",
-    longDescription: "I commit to developing open-source technology solutions for community challenges, investing in sustainable infrastructure projects, and promoting digital literacy in underserved communities through skills workshops.",
+    shortDescription: "Contributing to technological innovation at Bicol University",
+    longDescription: "As a CS student, I pledge to develop an open-source application to address a specific campus need, participate in BU's innovation competitions, and collaborate with other departments on cross-disciplinary tech projects that improve university infrastructure.",
     icon: "factory",
     color: "sdg-9",
     goals: [
-      "Create 2 open-source tools for community use",
-      "Teach digital skills to 50+ individuals annually",
-      "Advocate for sustainable infrastructure development"
+      "Develop one campus-focused open-source application annually",
+      "Participate in BU's technology innovation challenge",
+      "Initiate one cross-department collaboration project"
     ],
-    impact: "Bridging the digital divide for vulnerable populations and supporting community innovation",
-    timeline: "3-year development roadmap"
+    impact: "Creating practical technology solutions for campus needs and fostering innovation culture at BU",
+    timeline: "One major project per academic year with continuous improvements"
   },
   {
     id: 10,
     title: "Reduced Inequalities",
-    shortDescription: "My commitment to reduce inequality within and among communities",
-    longDescription: "I pledge to actively advocate for inclusive policies in my workplace and community, support organizations focused on social justice, and educate myself and others about systemic inequality and privilege.",
+    shortDescription: "Working to reduce digital and social divides at Bicol University",
+    longDescription: "I commit to volunteering with BU's programs for students from disadvantaged backgrounds, organizing basic computer literacy workshops for community members, and advocating for improved accessibility features on campus for students with disabilities.",
     icon: "equal",
     color: "sdg-10",
     goals: [
-      "Complete 12 educational workshops on social justice",
-      "Advocate for inclusive policies in 3 organizations",
-      "Allocate 10% of charitable giving to equality-focused nonprofits"
+      "Volunteer 2 hours weekly with accessibility support services",
+      "Conduct 5 basic computer literacy workshops per semester",
+      "Audit and recommend improvements for campus accessibility"
     ],
-    impact: "Contributing to more inclusive institutions and raising awareness about inequality",
-    timeline: "Ongoing commitment with annual learning objectives"
+    impact: "Reducing digital divide for 30+ community members and improving campus accessibility",
+    timeline: "Weekly volunteer work with monthly workshops"
   },
   {
     id: 11,
     title: "Sustainable Cities & Communities",
-    shortDescription: "My pledge to make cities inclusive, safe, resilient and sustainable",
-    longDescription: "I commit to advocating for affordable housing initiatives, supporting public transportation and walkable communities, and participating in urban greening projects to improve quality of life in my city.",
+    shortDescription: "Promoting sustainability in Bicol University campus and surrounding areas",
+    longDescription: "I pledge to actively participate in BU's campus beautification initiatives, join community planning discussions with student government, and advocate for sustainable transportation options like bike-sharing and carpooling programs for students.",
     icon: "building",
     color: "sdg-11",
     goals: [
-      "Plant 20 trees in urban areas annually",
-      "Reduce personal car usage by 50%",
-      "Participate in 5 community development meetings yearly"
+      "Participate in monthly campus beautification activities",
+      "Attend all student government sustainability meetings",
+      "Organize one carpooling network for students in my neighborhood"
     ],
-    impact: "Contributing to urban sustainability and inclusive community development",
-    timeline: "Ongoing with quarterly community service"
+    impact: "Contributing to a more sustainable, livable campus environment for the BU community",
+    timeline: "Regular monthly activities with one major initiative per semester"
   },
   {
     id: 12,
     title: "Responsible Consumption & Production",
-    shortDescription: "My commitment to ensure sustainable consumption and production patterns",
-    longDescription: "I pledge to adopt a near-zero waste lifestyle, with 90% reduction in personal waste generation, prioritize repairable and sustainable products, and educate others about conscious consumption through workshops and social media.",
+    shortDescription: "Reducing waste and promoting responsible consumption at BU",
+    longDescription: "I commit to organizing e-waste collection drives in the CITE department, practicing zero-waste principles in my daily campus life, and creating awareness campaigns about reducing single-use plastics in the university canteens and events.",
     icon: "recycle",
     color: "sdg-12",
     goals: [
-      "Reduce personal waste to less than 1 lb per week",
-      "Eliminate single-use plastics from household",
-      "Repair or repurpose 90% of potentially discarded items"
+      "Organize semestral e-waste collection for proper recycling",
+      "Reduce personal waste to maximum 1 small bag weekly",
+      "Launch 'Bring Your Own Container' campaign in BU canteens"
     ],
-    impact: "Preventing approximately 1,500 pounds of waste from entering landfills annually",
-    timeline: "2-year transition to near-zero waste"
+    impact: "Proper disposal of harmful e-waste and reduction of single-use items on campus",
+    timeline: "Daily personal practice with semestral organized activities"
   },
   {
     id: 13,
     title: "Climate Action",
-    shortDescription: "My pledge to take urgent action to combat climate change and its impacts",
-    longDescription: "I commit to reducing my carbon footprint by 70% through lifestyle changes, supporting climate advocacy organizations, and engaging in climate education and outreach in my community and workplace.",
+    shortDescription: "Taking climate action within Bicol University community",
+    longDescription: "I pledge to organize educational sessions about climate change impacts on Bicol Region, participate in the university's tree-planting initiatives, and create a digital carbon footprint calculator specifically for BU students to raise awareness.",
     icon: "cloud",
     color: "sdg-13",
     goals: [
-      "Reduce personal carbon footprint by 70%",
-      "Participate in 6 climate advocacy events annually",
-      "Educate 100+ people about climate solutions"
+      "Lead 2 climate education sessions per semester",
+      "Plant 10 trees per semester through BU's forestry program",
+      "Develop and promote BU student carbon footprint calculator"
     ],
-    impact: "Preventing approximately 10 tons of CO2 emissions annually through personal action and influence",
-    timeline: "5-year comprehensive climate action plan"
+    impact: "Increasing climate awareness among 200+ students and contributing to campus carbon offset efforts",
+    timeline: "Regular activities throughout academic year with special focus during Earth Month"
   },
   {
     id: 14,
     title: "Life Below Water",
-    shortDescription: "My commitment to conserve and sustainably use oceans and marine resources",
-    longDescription: "I pledge to eliminate my consumption of unsustainable seafood, participate in coastal cleanup initiatives, reduce plastic usage by 95%, and support marine conservation organizations through volunteering and donations.",
+    shortDescription: "Contributing to marine conservation efforts near Bicol University",
+    longDescription: "I commit to participating in coastal clean-up drives in nearby Legazpi beaches, supporting BU Marine Science department's awareness campaigns, and reducing my use of plastics that could end up in our local waters.",
     icon: "fish",
     color: "sdg-14",
     goals: [
-      "Participate in 4 coastal cleanup events annually",
-      "Eliminate consumption of red-listed seafood",
-      "Reduce plastic usage by 95%"
+      "Participate in 4 coastal clean-ups annually",
+      "Assist Marine Science department with 2 events per year",
+      "Eliminate single-use plastic water bottles from my daily routine"
     ],
-    impact: "Removing approximately 200 pounds of ocean plastic annually and promoting sustainable marine ecosystems",
-    timeline: "Ongoing with seasonal cleanup events"
+    impact: "Contributing to cleaner coastal areas and raising awareness about marine conservation",
+    timeline: "Quarterly clean-ups with ongoing plastic reduction"
   },
   {
     id: 15,
     title: "Life on Land",
-    shortDescription: "My pledge to protect, restore and promote sustainable use of terrestrial ecosystems",
-    longDescription: "I commit to supporting reforestation and biodiversity conservation through volunteer work, adopting a plant-rich diet to reduce environmental impact, and creating wildlife habitat in my garden and community.",
+    shortDescription: "Supporting biodiversity and ecosystem protection around BU",
+    longDescription: "I pledge to volunteer with BU's botanical garden maintenance, participate in Mayon Volcano natural park conservation activities, and help document local flora and fauna through the Biology department's citizen science initiatives.",
     icon: "trees",
     color: "sdg-15",
     goals: [
-      "Plant 50 native trees and plants annually",
-      "Increase plant-based meals to 80% of diet",
-      "Convert 100% of lawn to wildlife-supporting habitat"
+      "Volunteer 4 hours monthly at BU botanical garden",
+      "Join 2 Mayon conservation activities annually",
+      "Contribute 20 local species observations to biodiversity database"
     ],
-    impact: "Creating habitat for local wildlife and reducing land-use impact of personal consumption",
-    timeline: "3-year habitat transformation plan"
+    impact: "Supporting ecosystem health and biodiversity documentation in the Bicol region",
+    timeline: "Monthly garden work with seasonal conservation activities"
   },
   {
     id: 16,
     title: "Peace, Justice & Strong Institutions",
-    shortDescription: "My commitment to promote peaceful and inclusive societies for sustainable development",
-    longDescription: "I pledge to actively participate in democratic processes, support transparency and anti-corruption initiatives, and volunteer with organizations that provide legal aid to underserved communities.",
+    shortDescription: "Promoting ethical governance and peace at Bicol University",
+    longDescription: "I commit to active participation in BU's student government elections, organizing ethics discussions in my BSCS program, and volunteering with the university's conflict resolution peer counseling program.",
     icon: "scale",
     color: "sdg-16",
     goals: [
-      "Vote in all elections and contact representatives monthly",
-      "Volunteer 100 hours annually with legal aid organizations",
-      "Support 3 transparency/anti-corruption initiatives"
+      "100% participation in all student government elections",
+      "Organize 2 ethics discussions per semester for BSCS students",
+      "Complete peer counseling training and volunteer 2 hours weekly"
     ],
-    impact: "Strengthening democratic participation and increasing access to justice for vulnerable populations",
-    timeline: "Ongoing civic engagement with election-cycle intensity"
+    impact: "Strengthening democratic participation and ethical awareness in the BU community",
+    timeline: "Ongoing with heightened activity during election periods"
   },
   {
     id: 17,
     title: "Partnerships for the Goals",
-    shortDescription: "My pledge to strengthen the means of implementation and revitalize global partnership",
-    longDescription: "I commit to connecting diverse stakeholders working on sustainability challenges, supporting international cooperation through conscious consumerism and advocacy, and sharing resources and knowledge across my professional and personal networks.",
+    shortDescription: "Building collaborations to advance SDGs at Bicol University",
+    longDescription: "I pledge to connect BU student organizations working on different SDGs for collaborative projects, facilitate partnerships between my department and local tech companies for sustainability initiatives, and organize a multi-stakeholder SDG forum with university and community participants.",
     icon: "handshake",
     color: "sdg-17",
     goals: [
-      "Connect 10+ organizations working on complementary SDGs",
-      "Share SDG resources through professional network",
-      "Host 2 partnership-building events annually"
+      "Connect 3+ student organizations for collaborative SDG projects",
+      "Establish 1 department-industry partnership for sustainability",
+      "Organize annual BU SDG forum with diverse stakeholders"
     ],
-    impact: "Facilitating collaboration that amplifies SDG progress across sectors and borders",
-    timeline: "Ongoing network development with annual expansion"
+    impact: "Creating synergies between different SDG efforts and strengthening university-community-industry collaboration",
+    timeline: "Ongoing networking with annual forum event"
   }
 ];
